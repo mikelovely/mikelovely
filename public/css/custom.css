@@ -1,0 +1,78 @@
+/* Mobile first queries */
+.header {
+  border: 1px solid red;
+  padding: 5% 0;
+  background-color: green;
+}
+
+.top-section__content {
+    text-align: center;
+}
+
+.profile-image {
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.portfolio-header {
+    padding: 2%;
+}
+
+.portfolio-header__content {
+    border: 1px solid green;
+    padding: 2%;
+}
+
+.portfolio-item {
+    padding: 2%;
+}
+
+.portfolio-item__content {
+    border: 1px solid red;
+    padding: 2%;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .header {
+        background-color: red;
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .header {
+        background-color: blue;
+    }
+
+    .top-section__content {
+        text-align: left;
+    }
+
+    .portfolio-header {
+        margin: 0;
+    }
+
+    .portfolio-header__content {
+        padding: 5%;
+    }
+
+    .portfolio-item {
+        margin: 0;
+    }
+
+    .portfolio-item__content {
+        padding: 5%;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
