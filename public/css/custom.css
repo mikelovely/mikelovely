@@ -18,6 +18,7 @@
 
 .portfolio-header {
     padding: 2%;
+    border: 1px solid black;
 }
 
 .portfolio-header__content {
@@ -27,11 +28,41 @@
 
 .portfolio-item {
     padding: 2%;
+    border: 1px solid green;
+}
+
+.portfolio-item__header {
+    border: 1px solid pink;
+    padding: 2% 2% 0 2%;
 }
 
 .portfolio-item__content {
     border: 1px solid red;
     padding: 2%;
+}
+
+.portfolio-item__content p {
+    padding-top: 5%;
+}
+
+.label-wrapper {
+    border: 1px solid orange;
+    padding: 1%;
+}
+
+.label {
+    border: 1px solid red;
+    padding: 1.5%;
+    margin: 1%;
+    font-size: 1.0rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+}
+
+.footer {
+  border: 1px solid blue;
+  padding: 5% 0;
+  background-color: grey;
 }
 
 /* Larger than mobile */
@@ -60,7 +91,11 @@
     }
 
     .portfolio-item {
-        margin: 0;
+    
+    }
+
+    .portfolio-item__header {
+        padding: 5% 5% 0 5%;
     }
 
     .portfolio-item__content {
