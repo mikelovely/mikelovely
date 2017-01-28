@@ -10,35 +10,30 @@
 }
 
 .profile-image {
-    border: 1px solid green;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.portfolio-header {
-    padding: 2%;
-    border: 1px solid black;
-}
-
-.portfolio-header__content {
-    border: 1px solid green;
-    padding: 2%;
+    margin: auto;
+    width: 300px;
 }
 
 .portfolio-item {
-    padding: 2%;
-    border: 1px solid green;
+    background-color: orange;
 }
 
-.portfolio-item__header {
-    border: 1px solid pink;
-    padding: 2% 2% 0 2%;
+.portfolio-item__image {
+    padding: 5% 0;
+}
+
+.portfolio-item__image img {
+    margin:auto;
+    display:block;
+    width: 350px;
 }
 
 .portfolio-item__content {
-    border: 1px solid red;
-    padding: 2%;
+    padding: 5%;
+}
+
+.portfolio-item__content h3 {
+    text-align: center;
 }
 
 .portfolio-item__content p {
@@ -46,7 +41,7 @@
 }
 
 .label-wrapper {
-    border: 1px solid orange;
+    text-align: center;
     padding: 1%;
 }
 
@@ -54,15 +49,26 @@
     border: 1px solid red;
     padding: 1.5%;
     margin: 1%;
-    font-size: 1.0rem;
-    line-height: 1.2;
+    font-size: 1.6rem;
+    line-height: 2.5;
     letter-spacing: -.1rem;
+    white-space: nowrap;
 }
 
 .footer {
-  border: 1px solid blue;
   padding: 5% 0;
   background-color: grey;
+}
+
+.footer .social {
+    text-align: center;
+    width: 100%;
+}
+
+.footer .social li {
+  float: left;
+  width: 33%;
+  list-style: none;
 }
 
 /* Larger than mobile */
@@ -82,32 +88,33 @@
         text-align: left;
     }
 
-    .portfolio-header {
-        margin: 0;
-    }
-
-    .portfolio-header__content {
-        padding: 5%;
-    }
-
-    .portfolio-item {
-    
-    }
-
-    .portfolio-item__header {
-        padding: 5% 5% 0 5%;
-    }
-
     .portfolio-item__content {
-        padding: 5%;
+        padding: 3%;
+    }
+
+    .portfolio-item__content h3 {
+        text-align: left;
     }
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .portfolio-item__content {
+        padding: 3%;
+    }
+
+    .portfolio-item__image img {
+        margin-right: auto;
+    }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .portfolio-item__content {
+        padding: 2%;
+    }
+}
