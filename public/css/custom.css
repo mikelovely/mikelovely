@@ -1,111 +1,17 @@
 /* Mobile first queries */
-.header {
-  border: 1px solid red;
-  padding: 5% 0;
-  background-color: green;
-}
 
-.top-section__content {
-    text-align: center;
-}
-
-.profile-image {
-    margin: auto;
-    width: 300px;
-}
-
-.portfolio-item {
-    background-color: orange;
-}
-
-.portfolio-item__image {
-    padding: 5% 0;
-}
-
-.portfolio-item__image img {
-    margin:auto;
-    display:block;
-    width: 350px;
-}
-
-.portfolio-item__content {
-    padding: 5%;
-}
-
-.portfolio-item__content h3 {
-    text-align: center;
-}
-
-.portfolio-item__content p {
-    padding-top: 5%;
-}
-
-.label-wrapper {
-    text-align: center;
-    padding: 1%;
-}
-
-.label {
-    border: 1px solid red;
-    padding: 1.5%;
-    margin: 1%;
-    font-size: 1.6rem;
-    line-height: 2.5;
-    letter-spacing: -.1rem;
-    white-space: nowrap;
-}
-
-.footer {
-  padding: 5% 0;
-  background-color: grey;
-}
-
-.footer .social {
-    text-align: center;
-    width: 100%;
-}
-
-.footer .social li {
-  float: left;
-  width: 33%;
-  list-style: none;
-}
 
 /* Larger than mobile */
-@media (min-width: 400px) {
-    .header {
-        background-color: red;
-    }
-}
+@media (min-width: 400px) {}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-    .header {
-        background-color: blue;
-    }
-
-    .top-section__content {
-        text-align: left;
-    }
-
-    .portfolio-item__content {
-        padding: 3%;
-    }
-
-    .portfolio-item__content h3 {
-        text-align: left;
-    }
+    
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-    .portfolio-item__content {
-        padding: 3%;
-    }
-
-    .portfolio-item__image img {
-        margin-right: auto;
-    }
+    
 }
 
 /* Larger than desktop */
@@ -114,7 +20,5 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    .portfolio-item__content {
-        padding: 2%;
-    }
+    
 }
