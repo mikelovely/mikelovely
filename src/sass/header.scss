@@ -1,7 +1,9 @@
+$blue: rgb(40, 170, 220);
+
 .header {
   border: 1px solid red;
   padding: 5% 0;
-  background-color: green;
+  background-color: $blue;
 }
 
 .top-section__content {
@@ -11,4 +13,20 @@
 .profile-image {
     margin: auto;
     width: 300px;
+}
+
+@media screen and (min-width: 400px) {
+    .header {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .header {
+        background-color: blue;
+    }
+
+    .top-section__content {
+        text-align: left;
+    }
 }

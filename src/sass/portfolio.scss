@@ -23,3 +23,29 @@
 .portfolio-item__content p {
     padding-top: 5%;
 }
+
+@media screen and (min-width: 550px) {
+    .portfolio-item__content {
+        padding: 3%;
+    }
+
+    .portfolio-item__content h3 {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .portfolio-item__content {
+        padding: 3%;
+    }
+
+    .portfolio-item__image img {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio-item__content {
+        padding: 2%;
+    }
+}
