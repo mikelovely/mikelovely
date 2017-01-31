@@ -1,14 +1,22 @@
+.portfolio {
+    background-image: url(../images/background/tweed.png);
+    background-repeat: repeat;
+    color: #CCC;
+
+    .bg-fade {
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.1), 
+          rgba(0, 0, 0, 0.1)
+        );
+    }
+}
+
 .portfolio-header {
-    background-color: green;
     padding: 5%;
 
     .portfolio-header__content {
         text-align: center;
     }
-}
-
-.portfolio-item {
-    background-color: orange;
 }
 
 .portfolio-item__image {
@@ -33,18 +41,6 @@
     }
 }
 
-.background-grey {
-    background-color: grey;
-}
-
-.background-light {
-    background-color: rgba(40, 170, 220, 0.5);
-}
-
-.background-textured {
-    background-color: silver;
-}
-
 @media screen and (min-width: 550px) {
     .portfolio-item__content {
         padding: 3%;
@@ -57,8 +53,6 @@
 
 @media screen and (min-width: 750px) {
     .portfolio-item__content {
-        padding: 3%;
-
         img {
             margin-right: auto;
         }

@@ -1,15 +1,14 @@
 .footer {
-  padding: 5% 0;
-  background-color: grey;
-}
+    padding: 5% 0;
 
-.footer .social {
-    text-align: center;
-    width: 100%;
-}
+    .social {
+        text-align: center;
+        width: 100%;
 
-.footer .social li {
-  float: left;
-  width: 33%;
-  list-style: none;
+        li {
+            float: left;
+            width: 33%;
+            list-style: none;
+        }
+    }
 }

@@ -1,14 +1,14 @@
 .label-wrapper {
     text-align: center;
     padding: 1%;
-}
 
-.label {
-    border: 1px solid red;
-    padding: 1.5%;
-    margin: 1%;
-    font-size: 1.6rem;
-    line-height: 2.5;
-    letter-spacing: -.1rem;
-    white-space: nowrap;
+    .label {
+        border: 1px solid red;
+        padding: 1.5%;
+        margin: 1%;
+        font-size: 1.6rem;
+        line-height: 2.5;
+        letter-spacing: -.1rem;
+        white-space: nowrap;
+    }
 }

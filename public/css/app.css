@@ -1,59 +1,55 @@
 .footer {
-  padding: 5% 0;
-  background-color: grey; }
-
-.footer .social {
-  text-align: center;
-  width: 100%; }
-
-.footer .social li {
-  float: left;
-  width: 33%;
-  list-style: none; }
+  padding: 5% 0; }
+  .footer .social {
+    text-align: center;
+    width: 100%; }
+    .footer .social li {
+      float: left;
+      width: 33%;
+      list-style: none; }
 
 .header {
-  border: 1px solid red;
-  padding: 5% 0;
-  background-color: #28aadc; }
+  padding: 5% 0; }
 
 .top-section__content {
   text-align: center; }
-
-.profile-image {
-  margin: auto;
-  width: 300px; }
-
-@media screen and (min-width: 400px) {
-  .header {
-    background-color: red; } }
+  .top-section__content img {
+    margin: auto;
+    width: 250px;
+    border: 8px solid silver;
+    border-radius: 100%; }
 
 @media screen and (min-width: 550px) {
-  .header {
-    background-color: blue; }
   .top-section__content {
     text-align: left; } }
 
 .label-wrapper {
   text-align: center;
   padding: 1%; }
+  .label-wrapper .label {
+    border: 1px solid red;
+    padding: 1.5%;
+    margin: 1%;
+    font-size: 1.6rem;
+    line-height: 2.5;
+    letter-spacing: -.1rem;
+    white-space: nowrap; }
 
-.label {
-  border: 1px solid red;
-  padding: 1.5%;
-  margin: 1%;
-  font-size: 1.6rem;
-  line-height: 2.5;
-  letter-spacing: -.1rem;
-  white-space: nowrap; }
+body {
+  background-image: url(../images/background/cheap_diagonal_fabric.png);
+  background-repeat: repeat; }
+
+.portfolio {
+  background-image: url(../images/background/tweed.png);
+  background-repeat: repeat;
+  color: #CCC; }
+  .portfolio .bg-fade {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); }
 
 .portfolio-header {
-  background-color: green;
   padding: 5%; }
   .portfolio-header .portfolio-header__content {
     text-align: center; }
-
-.portfolio-item {
-  background-color: orange; }
 
 .portfolio-item__image {
   padding: 5% 0; }
@@ -69,15 +65,6 @@
   .portfolio-item__content p {
     padding-top: 5%; }
 
-.background-grey {
-  background-color: grey; }
-
-.background-light {
-  background-color: rgba(40, 170, 220, 0.5); }
-
-.background-textured {
-  background-color: silver; }
-
 @media screen and (min-width: 550px) {
   .portfolio-item__content {
     padding: 3%; }
@@ -85,10 +72,8 @@
       text-align: left; } }
 
 @media screen and (min-width: 750px) {
-  .portfolio-item__content {
-    padding: 3%; }
-    .portfolio-item__content img {
-      margin-right: auto; } }
+  .portfolio-item__content img {
+    margin-right: auto; } }
 
 @media screen and (min-width: 1200px) {
   .portfolio-item__content {
