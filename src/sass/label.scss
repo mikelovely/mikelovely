@@ -12,3 +12,13 @@
         white-space: nowrap;
     }
 }
+
+@media screen and (min-width: 750px) {
+    .label-wrapper {
+        padding: 0;
+        
+        .label {
+            margin-left: 0;
+        }
+    }
+}
