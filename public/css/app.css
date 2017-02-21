@@ -27,13 +27,21 @@
   text-align: center;
   padding: 1%; }
   .label-wrapper .label {
-    border: 1px solid red;
     padding: 1.5%;
     margin: 1%;
     font-size: 1.6rem;
     line-height: 2.5;
     letter-spacing: -.1rem;
-    white-space: nowrap; }
+    white-space: nowrap;
+    background-color: #EEE; }
+  .label-wrapper .front-end {
+    border-left: 5px solid #D4DB0F; }
+  .label-wrapper .back-end {
+    border-left: 5px solid #C10F0F; }
+  .label-wrapper .database {
+    border-left: 5px solid #9B0BC6; }
+  .label-wrapper .dev-ops {
+    border-left: 5px solid #0E6ECE; }
 
 @media screen and (min-width: 550px) {
   .label-wrapper {
@@ -48,8 +56,7 @@ body {
 
 .portfolio {
   background-image: url(../images/background/tweed.png);
-  background-repeat: repeat;
-  color: #CCC; }
+  background-repeat: repeat; }
   .portfolio .bg-fade {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); }
   .portfolio .bg-cream {
