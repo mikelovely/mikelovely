@@ -19,7 +19,7 @@
     border: 8px solid silver;
     border-radius: 100%; }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 750px) {
   .top-section__content {
     text-align: left; } }
 
@@ -34,6 +34,12 @@
     line-height: 2.5;
     letter-spacing: -.1rem;
     white-space: nowrap; }
+
+@media screen and (min-width: 750px) {
+  .label-wrapper {
+    padding: 0; }
+    .label-wrapper .label {
+      margin-left: 0; } }
 
 body {
   background-image: url(../images/background/cheap_diagonal_fabric.png);
@@ -56,24 +62,26 @@ body {
   .portfolio-item__image img {
     margin: auto;
     display: block;
-    width: 350px; }
+    width: 90%; }
 
 .portfolio-item__content {
   padding: 5%; }
   .portfolio-item__content h3 {
     text-align: center; }
   .portfolio-item__content p {
-    padding-top: 5%; }
+    padding: 2% 0; }
 
 @media screen and (min-width: 550px) {
+  .portfolio-item__image img {
+    width: 80%; } }
+
+@media screen and (min-width: 750px) {
   .portfolio-item__content {
     padding: 3%; }
     .portfolio-item__content h3 {
+      text-align: left; }
+    .portfolio-item__content .label-wrapper {
       text-align: left; } }
-
-@media screen and (min-width: 750px) {
-  .portfolio-item__content img {
-    margin-right: auto; } }
 
 @media screen and (min-width: 1200px) {
   .portfolio-item__content {
