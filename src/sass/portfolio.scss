@@ -1,13 +1,27 @@
 .portfolio {
     background-image: url(../images/background/tweed.png);
     background-repeat: repeat;
-    color: #CCC;
 
     .bg-fade {
         background: linear-gradient(
           rgba(0, 0, 0, 0.1), 
           rgba(0, 0, 0, 0.1)
         );
+    }
+
+    .bg-cream {
+        background-image: url(../images/background/cream_dust.png);
+        background-repeat: repeat;
+        color: #2A2A2A;
+    }
+
+    hr {
+        background-image: url(../images/background/subtle_freckles.png);
+        background-repeat: repeat;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        height: 5px;
     }
 }
 
@@ -25,7 +39,7 @@
     img {
         margin:auto;
         display:block;
-        width: 350px;
+        width: 90%;
     }
 }
 
@@ -42,21 +56,28 @@
 }
 
 @media screen and (min-width: 550px) {
-    .portfolio-item__content {
-        padding: 3%;
+    
+    .portfolio-item {
+        .column, .columns {
+            margin-left: 0%;
+        }
 
-        h3 {
-            text-align: left;
+        .one-third {
+            width: 34.6666666667%;
+        }
+
+        .portfolio-item__content {
+            padding: 3%;
+
+            h3 {
+                text-align: left;
+            }
         }
     }
 }
 
 @media screen and (min-width: 750px) {
-    .portfolio-item__content {
-        img {
-            margin-right: auto;
-        }
-    }
+    
 }
 
 @media screen and (min-width: 1200px) {

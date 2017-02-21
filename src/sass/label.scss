@@ -3,12 +3,39 @@
     padding: 1%;
 
     .label {
-        border: 1px solid red;
         padding: 1.5%;
         margin: 1%;
         font-size: 1.6rem;
         line-height: 2.5;
         letter-spacing: -.1rem;
         white-space: nowrap;
+        background-color: #EEE;
+    }
+    
+    .front-end {
+        border-left: 5px solid #D4DB0F;
+    }
+
+    .back-end {
+        border-left: 5px solid #C10F0F;
+    }
+
+    .database {
+        border-left: 5px solid #9B0BC6;
+    }
+
+    .dev-ops {
+        border-left: 5px solid #0E6ECE;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .label-wrapper {
+        padding: 0;
+        text-align: left;
+
+        .label {
+            margin-left: 0;
+        }
     }
 }
