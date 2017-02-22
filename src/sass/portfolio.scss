@@ -2,6 +2,11 @@
     background-image: url(../images/background/tweed.png);
     background-repeat: repeat;
 
+    .portfolio-item {
+        padding: 0;
+        margin: 0;
+    }
+
     .bg-fade {
         background: linear-gradient(
           rgba(0, 0, 0, 0.1), 
@@ -15,62 +20,61 @@
         color: #2A2A2A;
     }
 
-    hr {
-        background-image: url(../images/background/subtle_freckles.png);
-        background-repeat: repeat;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        height: 5px;
-    }
-}
-
-.portfolio-header {
-    padding: 5%;
-
-    .portfolio-header__content {
-        text-align: center;
-    }
-}
-
-.portfolio-item__image {
-    padding: 5% 0;
-
-    img {
-        margin:auto;
-        display:block;
-        width: 90%;
-    }
-}
-
-.portfolio-item__content {
-    padding: 5%;
-
-    h3 {
-        text-align: center;
+    .portfolio-item__image {
+        img {
+            margin:auto;
+            display:block;
+            width: 100%;
+        }
     }
 
-    p {
-        padding-top: 5%;
+    .portfolio-item__content {
+        padding: 5% 2% 0 2%;
+
+        h3 {
+            color: #FAFAFA;
+            text-align: center;
+        }
+    }
+
+    .portfolio-item__text {
+        p {
+            color: #FAFAFA;
+            margin: 2%;
+            padding: 2%;
+        }
     }
 }
 
 @media screen and (min-width: 550px) {
-    
-    .portfolio-item {
-        .column, .columns {
-            margin-left: 0%;
-        }
+    .portfolio {
+        padding: 3%;
 
-        .one-third {
-            width: 34.6666666667%;
-        }
+        .portfolio-item {
+            .column, .columns {
+                margin-left: 0%;
+            }
 
-        .portfolio-item__content {
-            padding: 3%;
+            .one-third {
+                width: 34.6666666667%;
+            }
 
-            h3 {
-                text-align: left;
+            .portfolio-item__image {
+            }
+
+            .portfolio-item__content {
+                padding: 3%;
+
+                h3 {
+                    text-align: left;
+                }
+            }
+
+            .portfolio-item__text {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
             }
         }
     }
@@ -81,7 +85,5 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .portfolio-item__content {
-        padding: 2%;
-    }
+
 }
