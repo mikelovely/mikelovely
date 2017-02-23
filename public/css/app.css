@@ -24,8 +24,7 @@
     text-align: left; } }
 
 .label-wrapper {
-  text-align: center;
-  padding: 1%; }
+  text-align: center; }
   .label-wrapper .label {
     color: #3A3A3A;
     padding: 1.5%;
@@ -82,16 +81,18 @@ body {
     padding: 2%; }
 
 @media screen and (min-width: 550px) {
-  .portfolio {
+  .portfolio .portfolio-item {
     padding: 3%; }
     .portfolio .portfolio-item .column, .portfolio .portfolio-item .columns {
       margin-left: 0%; }
     .portfolio .portfolio-item .one-third {
       width: 34.6666666667%; }
+    .portfolio .portfolio-item .portfolio-item__wrapper {
+      padding-bottom: 3%; }
     .portfolio .portfolio-item .portfolio-item__content {
       padding: 3%; }
       .portfolio .portfolio-item .portfolio-item__content h3 {
         text-align: left; }
     .portfolio .portfolio-item .portfolio-item__text p {
-      padding: 0;
+      padding: 1% 0;
       margin: 0; } }

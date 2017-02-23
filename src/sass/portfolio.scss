@@ -48,15 +48,19 @@
 
 @media screen and (min-width: 550px) {
     .portfolio {
-        padding: 3%;
-
         .portfolio-item {
+            padding: 3%;
+            
             .column, .columns {
                 margin-left: 0%;
             }
 
             .one-third {
                 width: 34.6666666667%;
+            }
+
+            .portfolio-item__wrapper {
+                padding-bottom: 3%;
             }
 
             .portfolio-item__image {
@@ -72,7 +76,7 @@
 
             .portfolio-item__text {
                 p {
-                    padding: 0;
+                    padding: 1% 0;
                     margin: 0;
                 }
             }
