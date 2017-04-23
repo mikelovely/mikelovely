@@ -1,4 +1,7 @@
 body {
-    background-image: url(../images/background/cheap_diagonal_fabric.png);
-    background-repeat:repeat;
+}
+
+@media screen and (min-width: 400px) {
+    body {
+    }
 }

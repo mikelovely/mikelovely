@@ -9,7 +9,7 @@
 
     .bg-fade {
         background: linear-gradient(
-          rgba(0, 0, 0, 0.1), 
+          rgba(0, 0, 0, 0.1),
           rgba(0, 0, 0, 0.1)
         );
     }
@@ -50,7 +50,7 @@
     .portfolio {
         .portfolio-item {
             padding: 3%;
-            
+
             .column, .columns {
                 margin-left: 0%;
             }
@@ -59,19 +59,15 @@
                 width: 34.6666666667%;
             }
 
-            .portfolio-item__wrapper {
-                padding-bottom: 3%;
-            }
-
             .portfolio-item__image {
+                img {
+                    margin: auto;
+                    width: 80%;
+                }
             }
 
             .portfolio-item__content {
                 padding: 3%;
-
-                h3 {
-                    text-align: left;
-                }
             }
 
             .portfolio-item__text {
@@ -85,7 +81,17 @@
 }
 
 @media screen and (min-width: 750px) {
-    
+    .portfolio {
+        .portfolio-item {
+            margin: 0 auto;
+            width: 60%;
+            .portfolio-item__image {
+                img {
+                    width: 75%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
