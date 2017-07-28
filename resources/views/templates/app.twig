@@ -28,11 +28,7 @@
         {# <link rel="icon" type="image/png" href="images/favicon.png"> #}
     </head>
     <body>
-
         {% include 'templates/partials/header.twig' %}
-
-        <section class="section">
-            {% block content %}{% endblock %}
-        </section>
+        {% block content %}{% endblock %}
     </body>
 </html>

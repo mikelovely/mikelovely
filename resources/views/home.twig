@@ -1,154 +1,176 @@
 {% extends 'templates/app.twig' %}
 
 {% block content %}
-    <section class="portfolio">
-        <div class="portfolio-item">
-            <div class="row">
-                <div class="twelve columns portfolio-item__image">
-                    <img src="/images/person-woman-hand-smartphone.jpg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__content">
-                    <h3 class="h1">Contactzilla</h3>
-                    <div class="label-wrapper">
-                        <span class="label label-default front-end">CoffeeScript</span>
-                        <span class="label label-default database">MongoDB</span>
-                        <span class="label label-default back-end">CardDAV</span>
-                        <span class="label label-default front-end">Backbone JS</span>
-                        <span class="label label-default back-end">Zend 1</span>
+    <div class="portfolio">
+        <div class="container">
+            <div class="row mobile">
+                <div class="six columns portfolio-item green-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Contactzilla</h2>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__text">
-                    <p>Contactzilla uses CardDAV technology to share contacts between teams. I maintained this project for about six months and added a range of new features during this time.</p>
-                    <p>I integrated a "custom fields" feature for each contact. I then expanded this feature so that custom fields could be searched on, and I restructured the importer and exporter scripts to handle custom fields. I also used different APIs to allow administrators of address books to import contacts from other resources such as Office365 and Slack. I also spent time getting to grips with Google Drive API and using Google Picker to store links to documents against specified contacts.</p>
-                    <p>One of the most enjoyable parts of this project was resolving a long standing issue relating to accounts being used for free when they should be paying. With over 16,000 accounts, I [investigated, used reason and logic, worked on a sample of data] to produce a list of thousands of accounts to be flagged for deletion.</p>
-                </div>
-            </div>
-        </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/person-woman-hand-smartphone.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>Contactzilla uses CardDAV technology to share contacts between teams. I maintained this project for about six months and added a range of new features during this time.</p>
 
-        <div class="portfolio-item">
-            <div class="row">
-                <div class="twelve columns portfolio-item__image">
-                    <img src="/images/people-woman-coffee-meeting.jpg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__content">
-                    <h3 class="h1">BaseKit</h3>
-                    <div class="label-wrapper">
-                        <span class="label label-default back-end">Symfony 2</span>
-                        <span class="label label-default dev-ops">Docker</span>
-                        <span class="label label-default database">MySQL</span>
-                        <span class="label label-default back-end">API Documentation</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__text">
-                    <p>I integrated several payment gateways in to an existing Symfony2 project, specifically; Yandex, Mercado Pago, 2Checkout and Payfast. This involved a lot of interesting edge-cases when needing to show or hide certain payment methods at checkout based on the vendors location.</p>
-                    <p>The most challenging part of this project was understanding the various flows each gateway would use for authorising payments.</p>
-                </div>
-            </div>
-        </div>
+                        <p>I integrated a "custom fields" feature for each contact. I then expanded this feature so that custom fields could be searched on, and I restructured the importer and exporter scripts to handle custom fields. I also used different APIs to allow administrators of address books to import contacts from other resources such as Office365 and Slack. I also spent time getting to grips with Google Drive API and using Google Picker to store links to documents against specified contacts.</p>
 
-        <div class="portfolio-item">
-            <div class="row">
-                <div class="twelve columns portfolio-item__image">
-                    <img src="/images/surveys-artwork.jpg">
+                        <p>One of the most enjoyable parts of this project was resolving a long standing issue relating to accounts being used for free when they should be paying. With over 16,000 accounts, I [investigated, used reason and logic, worked on a sample of data] to produce a list of thousands of accounts to be flagged for deletion.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__content">
-                    <h3 class="h1">Happy City</h3>
-                    <div class="label-wrapper">
-                        <span class="label label-default back-end">Laravel 5</span>
-                        <span class="label label-default database">PostgreSQL</span>
-                        <span class="label label-default back-end">PHPUnit</span>
-                        <span class="label front-end">Twig</span>
+                <div class="six columns portfolio-item blue-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>BaseKit</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/people-woman-coffee-meeting.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>I integrated several payment gateways in to an existing Symfony2 project, specifically; Yandex, Mercado Pago, 2Checkout and Payfast. This involved a lot of interesting edge-cases when needing to show or hide certain payment methods at checkout based on the vendors location.</p>
+                        <p>The most challenging part of this project was understanding the various flows each gateway would use for authorising payments.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__text">
-                    <p>I was required to quickly set-up and deliver a survey based system for our client to ask members of the public to rate their happiness. In this case, speed was key due to the clients limited budget.</p>
-                    <p>Percentiles was a key feature of the user experience so I used PostgreSQL as it has excellent percentile functions built-in. I used a standard Laravel installation but switched out the default templating engine Blade for Twig to make my front-end colleagues’ life as easy as possible.</p>
+            <div class="row mobile">
+                <div class="six columns portfolio-item red-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Happy City</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/surveys-artwork.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>I was required to quickly set-up and deliver a survey based system for our client to ask members of the public to rate their happiness. In this case, speed was key due to the clients limited budget.</p>
+                        <p>Percentiles was a key feature of the user experience so I used PostgreSQL as it has excellent percentile functions built-in. I used a standard Laravel installation but switched out the default templating engine Blade for Twig to make my front-end colleagues’ life as easy as possible.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="portfolio-item">
-            <div class="row">
-                <div class="twelve columns portfolio-item__image">
-                    <img src="/images/payment.jpeg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__content">
-                    <h3 class="h1">SourceCards</h3>
-                    <div class="label-wrapper">
-                        <span class="label label-default back-end">Ruby On Rails</span>
-                        <span class="label label-default back-end">RSpec</span>
-                        <span class="label label-default database">PostgreSQL</span>
+                <div class="six columns portfolio-item purple-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>SourceCards</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/payment.jpeg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>SourceCards is a new method for allocating money for food, energy, shelter, travel and other essentials to those who need support. SourceCards required a CMS and a public facing website to run the operation and it was built in Ruby On Rails.</p>
+                        <p>This was my first effort developing in Ruby. Fortunately, I had a lot of advice and support from my colleagues on the project who have spent many years working as Ruby developers.</p>
+                        <p>I learned a huge amount of Ruby On Rails from Form Objects with Reform to RSpec and Capybara for testing to Single Table Inheritance.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__text">
-                    <p>SourceCards is a new method for allocating money for food, energy, shelter, travel and other essentials to those who need support. SourceCards required a CMS and a public facing website to run the operation and it was built in Ruby On Rails.</p>
-                    <p>This was my first effort developing in Ruby. Fortunately, I had a lot of advice and support from my colleagues on the project who have spent many years working as Ruby developers.</p>
-                    <p>I learned a huge amount of Ruby On Rails from Form Objects with Reform to RSpec and Capybara for testing to Single Table Inheritance.</p>
+            <div class="row mobile">
+                <div class="six columns portfolio-item yellow-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Royal Warrant</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/royal-gates.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>The Royal Warrant website exists to provide support to those who supply goods or services to the Households of HM The Queen. It was originally built in Drupal 7 and the clients required a few additional features. I didn’t have a lot of experience with Drupal before this project so this was a great learning opportunity.</p>
+                        <p>I added new Content Types, and some new Views. I installed the Mini-Blocks module so the clients could update certain sections of the site, previously out of scope of the CMS.</p>
+                        <p>I also installed the Google Analytics module and worked with the clients to improve its tracking. For example, I applied logic that would log how many visitors were members (authorised users) and how many were guests. Something the client found very useful.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="portfolio-item">
-            <div class="row">
-                <div class="twelve columns portfolio-item__image">
-                    <img src="/images/royal-gates.jpg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__content">
-                    <h3 class="h1">Royal Warrant</h3>
-                    <div class="label-wrapper">
-                        <span class="label label-default back-end">Drupal 7</span>
-                        <span class="label label-default back-end">Google Analytics</span>
+                <div class="six columns portfolio-item blue-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Chippin</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/electronic-payment.jpeg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>This was a short project to create a Chippin (yet another payment gateway!) module for Prestashop. Prestashop is an eCommerce platform. It was built loosely in OOP PHP following Prestashop conventions.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__text">
-                    <p>The Royal Warrant website exists to provide support to those who supply goods or services to the Households of HM The Queen. It was originally built in Drupal 7 and the clients required a few additional features. I didn’t have a lot of experience with Drupal before this project so this was a great learning opportunity.</p>
-                    <p>I added new Content Types, and some new Views. I installed the Mini-Blocks module so the clients could update certain sections of the site, previously out of scope of the CMS.</p>
-                    <p>I also installed the Google Analytics module and worked with the clients to improve its tracking. For example, I applied logic that would log how many visitors were members (authorised users) and how many were guests. Something the client found very useful.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio-item">
-            <div class="row">
-                <div class="twelve columns portfolio-item__image">
-                    <img src="/images/electronic-payment.jpeg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__content">
-                    <h3 class="h1">Chippin</h3>
-                    <div class="label-wrapper">
-                        <span class="label label-default back-end">PHP</span>
-                        <span class="label label-default back-end">Prestashop</span>
-                        <span class="label label-default back-end">eCommerce</span>
+            <div class="row standard">
+                <div class="twelve columns portfolio-item green-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Contactzilla</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/person-woman-hand-smartphone.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>Contactzilla uses CardDAV technology to share contacts between teams. I maintained this project for about six months and added a range of new features during this time.</p>
+                        <p>I integrated a "custom fields" feature for each contact. I then expanded this feature so that custom fields could be searched on, and I restructured the importer and exporter scripts to handle custom fields. I also used different APIs to allow administrators of address books to import contacts from other resources such as Office365 and Slack. I also spent time getting to grips with Google Drive API and using Google Picker to store links to documents against specified contacts.</p>
+                        <p>One of the most enjoyable parts of this project was resolving a long standing issue relating to accounts being used for free when they should be paying. With over 16,000 accounts, I [investigated, used reason and logic, worked on a sample of data] to produce a list of thousands of accounts to be flagged for deletion.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="twelve columns portfolio-item__text">
-                    <p>This was a short project to create a Chippin (yet another payment gateway!) module for Prestashop. Prestashop is an eCommerce platform. It was built loosely in OOP PHP following Prestashop conventions.</p>
+            <div class="row standard">
+                <div class="twelve columns portfolio-item blue-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>BaseKit</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/people-woman-coffee-meeting.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>I integrated several payment gateways in to an existing Symfony2 project, specifically; Yandex, Mercado Pago, 2Checkout and Payfast. This involved a lot of interesting edge-cases when needing to show or hide certain payment methods at checkout based on the vendors location.</p>
+                        <p>The most challenging part of this project was understanding the various flows each gateway would use for authorising payments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row standard">
+                <div class="twelve columns portfolio-item red-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Happy City</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/surveys-artwork.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>I was required to quickly set-up and deliver a survey based system for our client to ask members of the public to rate their happiness. In this case, speed was key due to the clients limited budget.</p>
+                        <p>Percentiles was a key feature of the user experience so I used PostgreSQL as it has excellent percentile functions built-in. I used a standard Laravel installation but switched out the default templating engine Blade for Twig to make my front-end colleagues’ life as easy as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row standard">
+                <div class="twelve columns portfolio-item purple-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>SourceCards</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/payment.jpeg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>SourceCards is a new method for allocating money for food, energy, shelter, travel and other essentials to those who need support. SourceCards required a CMS and a public facing website to run the operation and it was built in Ruby On Rails.</p>
+                        <p>This was my first effort developing in Ruby. Fortunately, I had a lot of advice and support from my colleagues on the project who have spent many years working as Ruby developers.</p>
+                        <p>I learned a huge amount of Ruby On Rails from Form Objects with Reform to RSpec and Capybara for testing to Single Table Inheritance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row standard">
+                <div class="twelve columns portfolio-item yellow-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Royal Warrant</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/royal-gates.jpg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>The Royal Warrant website exists to provide support to those who supply goods or services to the Households of HM The Queen. It was originally built in Drupal 7 and the clients required a few additional features. I didn’t have a lot of experience with Drupal before this project so this was a great learning opportunity.</p>
+                        <p>I added new Content Types, and some new Views. I installed the Mini-Blocks module so the clients could update certain sections of the site, previously out of scope of the CMS.</p>
+                        <p>I also installed the Google Analytics module and worked with the clients to improve its tracking. For example, I applied logic that would log how many visitors were members (authorised users) and how many were guests. Something the client found very useful.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row standard">
+                <div class="twelve columns portfolio-item blue-border-top">
+                    <div class="portfolio-item__header">
+                        <h2>Chippin</h2>
+                    </div>
+                    <div class="portfolio-item__image">
+                        <img src="/images/electronic-payment.jpeg">
+                    </div>
+                    <div class="portfolio-item__body">
+                        <p>This was a short project to create a Chippin (yet another payment gateway!) module for Prestashop. Prestashop is an eCommerce platform. It was built loosely in OOP PHP following Prestashop conventions.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 {% endblock %}

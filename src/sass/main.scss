@@ -1,7 +1,152 @@
+
+html {
+    background-image: url(../images/background/extra_clean_paper.png);
+    background-repeat: repeat;
+}
+
 body {
 }
 
-@media screen and (min-width: 400px) {
-    body {
+.blue-border-top {
+    border-top: 6px solid #1E79A0;
+}
+
+.green-border-top {
+    border-top: 6px solid #90B575;
+}
+
+.red-border-top {
+    border-top: 6px solid #c93030;
+}
+
+.purple-border-top {
+    border-top: 6px solid #6b3282;
+}
+
+.yellow-border-top {
+    border-top: 6px solid #e2e20b;
+}
+
+.container {
+}
+
+.portfolio {
+
+    .mobile {
+        display: inline-block;
+    }
+
+    .standard {
+        display: none;
+    }
+
+    .row {
+
+        .portfolio-item {
+
+            background-color: #F9F9F9;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            padding: 0;
+
+            .portfolio-item__header {
+
+                text-align: center;
+
+                h2 {
+                    font-size: 1.4em;
+                    text-transform: uppercase;
+                    padding: 2% 0;
+                    margin: 0;
+                    letter-spacing: 2.4px;
+                }
+            }
+
+            .portfolio-item__image {
+
+                img {
+                    outline: 4px solid white;
+                    margin-left: -1%;
+                    width: 102%;
+                }
+            }
+
+            .portfolio-item__body {
+
+                padding: 0 4%;
+
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .container {
+        width: 90%;
+    }
+
+    .portfolio {
+
+        .mobile {
+            display: none;
+        }
+
+        .standard {
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+
+    .portfolio {
+
+        .row {
+
+            .portfolio-item {
+
+                .portfolio-item__image {
+
+                    text-align: center;
+                    background-color: #FAFAFA;
+
+                    outline: 4px solid white;
+                    width: 100%;
+                    padding-top: 8px;
+                    margin-bottom: 2em;
+
+                    img {
+                        width: 50%; // to maintain aspect ratio. You can use 100% if you don't care about that
+                        height: 100%;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio {
+
+        .row {
+
+            .portfolio-item {
+
+                .portfolio-item__body {
+
+                    p {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
     }
 }
