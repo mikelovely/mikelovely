@@ -11,13 +11,6 @@ Clone the repository.
 $ git clone git@github.com:mikelovely/mikelovely.git
 ```
 
-Copy environment file example to real.
-
-```
-$ cd mikelovely
-$ cat .env.example >> .env
-```
-
 # Gulp
 
 This repo uses Gulp to compile and minify scss files to standard css. To use, install NPM, Gulp and Sass if needed.
